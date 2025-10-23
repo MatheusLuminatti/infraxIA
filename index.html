@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFRAX - Infraestrutura de Crescimento com IA</title>
+    <!-- Carrega o Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuração do Tailwind para usar a fonte Inter -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Estilo para garantir que a navegação suave funcione */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1e3a8a', // Azul escuro principal
+                        'secondary-cyan': '#06b6d4', // Ciano para destaque
+                        'dark-bg': '#0f172a', // Fundo escuro
+                        'light-text': '#f1f5f9', // Texto claro
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-light-text antialiased">
+
+    <!-- Navegação (Header) -->
+    <header class="sticky top-0 z-50 bg-dark-bg/95 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-extrabold text-secondary-cyan tracking-wider">
+                    INFRAX
+                </a>
+                
+                <!-- Menu Desktop (Simplificado) -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#o-que-e" class="text-light-text hover:text-secondary-cyan transition duration-300 font-medium">O que é?</a>
+                    <a href="#contato" class="text-secondary-cyan border border-secondary-cyan px-3 py-1 rounded-full hover:bg-secondary-cyan hover:text-dark-bg transition duration-300 font-semibold">Contato</a>
+                </nav>
+
+                <!-- Menu Mobile Placeholder (simples) -->
+                <div class="md:hidden">
+                    <button class="text-light-text focus:outline-none">
+                        <!-- Icone de menu SVG -->
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero -->
+        <section id="hero" class="py-20 sm:py-32 lg:py-40 bg-dark-bg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight mb-6">
+                    A Infraestrutura que <span class="text-secondary-cyan">Gera Crescimento</span> em Vendas e Ofertas.
+                </h1>
+                <p class="text-xl sm:text-2xl text-gray-400 mb-10 max-w-4xl mx-auto">
+                    Transformamos o seu negócio ao **diagnosticar o que falta** e construir a fundação de IA necessária para aumentar exponencialmente suas vendas, otimizar marketing e expandir sua oferta.
+                </p>
+                <div class="space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#contato" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-dark-bg bg-secondary-cyan hover:bg-opacity-90 transition duration-300 transform hover:scale-105">
+                        Fale Conosco
+                    </a>
+                    <a href="#o-que-e" class="inline-flex items-center justify-center px-8 py-3 border-2 border-primary-blue text-base font-medium rounded-full text-light-text hover:bg-primary-blue transition duration-300 transform hover:scale-105">
+                        Entenda a Infraestrutura
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 1: O que é Infraestrutura de Crescimento com IA? -->
+        <section id="o-que-e" class="py-16 sm:py-24 bg-primary-blue/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-light-text mb-12 text-center">
+                    A INFRAX: O Modelo Processo + IA para Alto ROI
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <!-- Pilar 1: Mapeamento e Diagnóstico de Receita -->
+                    <div class="bg-dark-bg p-8 rounded-xl shadow-2xl transition duration-500 hover:shadow-secondary-cyan/50 hover:scale-[1.02]">
+                        <div class="w-12 h-12 mx-auto mb-4 text-secondary-cyan">
+                            <!-- Icone de Pesquisa/Lupa (SVG) -->
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-secondary-cyan">Mapeamento e Diagnóstico de Receita</h3>
+                        <p class="text-gray-400">Analisamos seus processos de vendas, marketing e oferta para identificar o ponto exato (o 'gap') onde a aplicação de IA gerará o maior retorno financeiro.</p>
+                    </div>
+
+                    <!-- Pilar 2: Desenho da Infraestrutura IA-First -->
+                    <div class="bg-dark-bg p-8 rounded-xl shadow-2xl transition duration-500 hover:shadow-secondary-cyan/50 hover:scale-[1.02]">
+                        <div class="w-12 h-12 mx-auto mb-4 text-secondary-cyan">
+                            <!-- Icone de Engrenagem/Processo (SVG) -->
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-secondary-cyan">Desenho da Infraestrutura IA-First</h3>
+                        <p class="text-gray-400">Projetamos a arquitetura de dados e MLOps necessária para implementar a solução de IA (Processo + IA) que ataca diretamente a falha, garantindo que a IA conduza a operação. </p>
+                    </div>
+
+                    <!-- Pilar 3: Escalabilidade e Geração de Valor Contínuo -->
+                    <div class="bg-dark-bg p-8 rounded-xl shadow-2xl transition duration-500 hover:shadow-secondary-cyan/50 hover:scale-[1.02]">
+                        <div class="w-12 h-12 mx-auto mb-4 text-secondary-cyan">
+                            <!-- Icone de Foguete/Crescimento (SVG) -->
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8m-2-5a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-secondary-cyan">Escalabilidade e Geração de Valor Contínuo</h3>
+                        <p class="text-gray-400">Entregamos uma máquina de crescimento replicável e de ponta a ponta. Monitoramos o ROI para garantir que a infraestrutura impulsione a Margem e o Faturamento do seu negócio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 4: Contato (Call to Action) -->
+        <section id="contato" class="py-16 sm:py-24 bg-primary-blue/50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl sm:text-5xl font-extrabold text-light-text mb-4">
+                    Entre em Contato: Desenhe Sua Estrutura de IA
+                </h2>
+                <p class="text-xl text-gray-200 mb-8">
+                    Se você é um empresário que busca escalar resultados com IA, vamos diagnosticar o seu gap de crescimento.
+                </p>
+                <!-- Formulário de Contato Simplificado -->
+                <form class="space-y-4 max-w-md mx-auto" onsubmit="handleFormSubmit(event)">
+                    <!-- Adicionado name attributes para capturar os dados no JS -->
+                    <input type="text" name="nome" placeholder="Seu Nome Completo" required class="w-full p-3 rounded-lg bg-dark-bg border border-secondary-cyan/50 text-light-text placeholder-gray-500 focus:ring-secondary-cyan focus:border-secondary-cyan">
+                    <input type="email" name="email" placeholder="Seu Email Profissional" required class="w-full p-3 rounded-lg bg-dark-bg border border-secondary-cyan/50 text-light-text placeholder-gray-500 focus:ring-secondary-cyan focus:border-secondary-cyan">
+                    <textarea name="desafio" placeholder="Fale sobre o seu desafio de crescimento ou faturamento" rows="4" required class="w-full p-3 rounded-lg bg-dark-bg border border-secondary-cyan/50 text-light-text placeholder-gray-500 focus:ring-secondary-cyan focus:border-secondary-cyan"></textarea>
+                    
+                    <button type="submit" class="w-full inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-xl text-dark-bg bg-secondary-cyan hover:bg-opacity-90 transition duration-300 transform hover:scale-[1.02]">
+                        Solicitar Contato
+                    </button>
+                    <!-- Mensagem de feedback (substitui alert) -->
+                    <p id="form-message" class="text-sm text-gray-200 pt-2 h-6"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé (Footer) -->
+    <footer class="bg-dark-bg border-t border-primary-blue/50 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg font-extrabold text-secondary-cyan mb-2">INFRAX</p>
+            <p class="text-sm text-gray-500">
+                Infraestrutura de Crescimento com IA. Construindo o Futuro, Hoje.
+            </p>
+            <p class="text-xs text-gray-600 mt-4">
+                &copy; 2024 INFRAX. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+    
+    <!-- Script de submissão de formulário (WhatsApp API) -->
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault(); // Impede o recarregamento da página
+
+            // 1. Captura dos dados do formulário
+            const form = event.target;
+            const nome = form.querySelector('input[name="nome"]').value;
+            const email = form.querySelector('input[name="email"]').value;
+            const desafio = form.querySelector('textarea[name="desafio"]').value;
+            
+            const formMessage = document.getElementById('form-message');
+            
+            // 2. Número de telefone para o WhatsApp (55 17 98168-3047)
+            const numeroWhatsApp = '5517981683047';
+
+            // 3. Criação da mensagem formatada
+            const mensagem = `
+*INFRAX: Novo Contato de Portfólio*
+
+*Nome:* ${nome}
+*E-mail:* ${email}
+*Desafio de Crescimento:* ${desafio}
+            `;
+
+            // 4. Criação da URL do WhatsApp API (com codificação da mensagem)
+            const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+
+            // 5. Abre a URL em uma nova aba
+            window.open(url, '_blank');
+
+            // 6. Feedback visual para o usuário
+            formMessage.innerHTML = '<span class="text-secondary-cyan font-semibold">Redirecionando para o WhatsApp... Por favor, finalize o envio da mensagem.</span>';
+
+            // 7. Limpa o formulário após um breve período
+            setTimeout(() => {
+                form.reset();
+                formMessage.textContent = '';
+            }, 5000);
+        }
+    </script>
+
+</body>
+</html>
